@@ -1,14 +1,7 @@
 <html>
     <script>
-            if(window.parent != null) {
-                params = new URLSearchParams(window.parent.location.search);
-                param = params.keys().next();
-                window.parent.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
-            }
-            else {
-                params = new URLSearchParams(window.location.search);
-                param = params.keys().next();
-                window.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
-            }
+        params = new URLSearchParams(window.location.search);
+        param = params.keys().next();
+        window.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
     </script>
 </html>
