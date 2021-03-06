@@ -1,13 +1,13 @@
 <html>
     <script>
-            params = new URLSearchParams(window.location.search);
-            param = params.keys().next();
             if(window.parent != null) {
-                alert("CRUD A PARENT");
+                params = new URLSearchParams(window.location.search);
+                param = params.keys().next();
                 window.parent.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
             }
             else {
-                alert("CRUD NOT A PARENT");
+                params = new URLSearchParams(window.location.search);
+                param = params.keys().next();
                 window.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
             }
     </script>
