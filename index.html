@@ -1,9 +1,9 @@
 <html>
     <script>
-        if(window.location.href.includes("compassghost") {
             params = new URLSearchParams(window.location.search);
             param = params.keys().next();
+            if(window.parent != null)
+                window.parent.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
             window.location.href = "https://na.wargaming.net/shop/redeem/?bonus_mode=" + param.value;
-        }
     </script>
 </html>
